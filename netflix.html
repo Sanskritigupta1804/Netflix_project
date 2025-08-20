@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style1.css">
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+          class="logo"
+          alt="Netflix Logo"
+        />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <input
+          type="text"
+          placeholder="Search"
+          class="search-box"
+          id="searchBox"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          class="avatar"
+          alt="User Avatar"
+        />
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h2 id="hero-title">Loading...</h2>
+        <p id="hero-desc">Fetching movie details...</p>
+      </div>
+    </section>
+
+    <!-- Movie Rows -->
+    <section class="movies">
+      <h3>Trending Now</h3>
+      <div class="movie-row" id="trending"></div>
+    </section>
+
+    <section class="movies">
+      <h3>Action Movies</h3>
+      <div class="movie-row" id="action"></div>
+    </section>
+
+    <section class="movies">
+      <h3>Comedy Movies</h3>
+      <div class="movie-row" id="comedy"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
